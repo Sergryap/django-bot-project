@@ -57,12 +57,25 @@ build-backend = "poetry.core.masonry.api"
 django-bot-project/
 ├── django_project
 │   ├── django_tg_bot
+│   └── static
+│  
+└── tests
+
+```
+
+### Создайте приложение tg_bot:
+`./manage.py startapp tg_bot`
+
+В итоге дерево папок проекта должно выглядеть следующим образом:
+```
+django-bot-project/
+├── django_project
+│   ├── django_tg_bot
 │   ├── static
 │   └── tg_bot
 │       └── migrations
 └── tests
 
-```
 
 ### В корне проекта django создайте файл `.env` с переменными окружения:
 
