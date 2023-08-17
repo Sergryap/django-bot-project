@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "django-project"
+version = "0.1.0"
+description = ""
+authors = ["Sergryap <rs1180@mail.ru>"]
+readme = "README.md"
+packages = [{include = "django_project"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "4.2.4"
+django-tg-bot-framework = {git = "https://gitlab.levelupdev.ru/dvmn-open-source-dev-tools/django_tg_bot_framework.git", rev = "c504a47496823cd7715f8d4d4df9915a48cbb5c3"}
+rollbar = "0.16.3"
+django-debug-toolbar = "4.2.0"
+pydantic = {extras = ["dotenv"], version = "1.10.8"}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
