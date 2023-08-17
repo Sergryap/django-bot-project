@@ -126,28 +126,30 @@ DJANGO_TG_BOT_FRAMEWORK_MOCK_MESSAGES_ENABLED=true
 ```
 
 ### Там же, в корне проекта создайте файл `env_settings.py`с описанием типов переменных окружения на основе моделей Pydantic:
-Содержимое файла см. в репозитории примера бота -> env_settings.py
+Содержимое файла см. в репозитории примера бота -> [env_settings.py](https://github.com/Sergryap/django-bot-project/blob/main/django_project/env_settings.py)
 
 ### Выполните настройки в файле settings.py: пропишите необходимые переменные, подключите приложения
-Содержимое файла см. в репозитории примера бота -> settings.py
+Содержимое файла см. в репозитории примера бота -> [settings.py](https://github.com/Sergryap/django-bot-project/blob/main/django_project/django_tg_bot/settings.py)
 
 
 ### Задайте urlpatterns для проекта django в файле `django_tg_bot/urls.py`:
-Содержимое файла см. в репозитории примера бота -> django_tg_bot/urls.py
+Содержимое файла см. в репозитории примера бота -> [django_tg_bot/urls.py](https://github.com/Sergryap/django-bot-project/blob/main/django_project/django_tg_bot/urls.py)
 
 ### Задайте urlpatterns для приложения tg_bot в файле `tg_bot/urls.py`:
-Содержимое файла см. в репозитории примера бота -> tg_bot/urls.py
+Содержимое файла см. в репозитории примера бота -> (tg_bot/urls.py)[https://github.com/Sergryap/django-bot-project/blob/main/django_project/tg_bot/urls.py]
 
 ### Для приложения tg_bot cоздайте модели для базы данных в файле `tg_bot/models.py`
-Содержимое файла см. в репозитории примера бота -> tg_bot/models.py
+Содержимое файла см. в репозитории примера бота -> [tg_bot/models.py](https://github.com/Sergryap/django-bot-project/blob/main/django_project/tg_bot/models.py)
 
 ### В короне пакета приложения tg_bot создайте файл `state_machine_runners.py`
-Содержимое файла см. в репозитории примера бота -> state_machine_runners.py
+Данный файл необходим для переключения между состояниями бота и в дальнейших версиях будет перенесен во фреймворк.
+
+Содержимое файла см. в репозитории примера бота -> [state_machine_runners.py](https://github.com/Sergryap/django-bot-project/blob/main/django_project/tg_bot/state_machine_runners.py)
 
 ### В короне пакета приложения tg_bot создайте файл `states.py`
 Данный файл содержит в себе основную логику работы бота и состоит из отдельных состояний (states), описанных в виде классов, и связанных между собой.
 
-Для создания простейшего эхо-бота файл `states.py` может выглядеть так:
+Для создания простейшего эхо-бота файл [states.py](https://github.com/Sergryap/django-bot-project/blob/main/django_project/tg_bot/states.py) может выглядеть так:
 
 ```python
 from typing import Optional
@@ -235,7 +237,8 @@ django-bot-project/
 `./manage.py runserver`
 
 ### Готовый пример бота можно скачать здесь:
-``
+[Пример эхо-бота](https://github.com/Sergryap/django-bot-project)
+
 
 
 
