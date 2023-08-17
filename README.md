@@ -218,6 +218,17 @@ Ngrok сообщит вам публичный адрес и начнём про
 Обратите внимание, что бесплатная версия Ngrok предоставляет временные адреса, которые меняются при каждом запуске `ngrok`. Лучше
 не выключайте `ngrok` во время работы с сайтом.
 
+Теперь осталось сообщить серверу телеграм, о нашем webhook-сервере:
+
+```shell
+$ # Замените `https://example.ngrok-free.app` на полученный от ngrok публичный адрес
+$ PUBLIC_URL="https://example.ngrok-free.app"
+$ # Замените `1613441681:example` на токен вашего телеграм бота
+$ TG_BOT_TOKEN="1613441681:example"
+$ curl -F "url=${PUBLIC_URL}/webhook/" -F "secret_token=webhook_token" https://api.telegram.org/bot${TG_BOT_TOKEN}/setWebhook
+{"ok":true,"result":true,"description":"Webhook was set"}
+```
+
 ### Теперь можно запуcтить бота на локальном сервере django:
 `./manage.py runserver`
 
