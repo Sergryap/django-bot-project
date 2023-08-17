@@ -67,6 +67,7 @@ django-bot-project/
 `./manage.py startapp tg_bot`
 
 В итоге дерево папок проекта должно выглядеть следующим образом:
+
 ```
 django-bot-project/
 ├── django_project
@@ -76,6 +77,7 @@ django-bot-project/
 │       └── migrations
 └── tests
 
+```
 
 ### В корне проекта django создайте файл `.env` с переменными окружения:
 
