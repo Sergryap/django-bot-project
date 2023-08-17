@@ -1,2 +1,3 @@
 .env
 .idea
+/django_project/db.sqlite3
