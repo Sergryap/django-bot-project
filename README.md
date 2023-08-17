@@ -102,7 +102,7 @@ DJANGO_TG_BOT_FRAMEWORK_MOCK_MESSAGES_ENABLED=true
 
 Содержимое файла см. в репозитории примера бота -> [state_machine_runners.py](https://github.com/Sergryap/django-bot-project/blob/main/django_project/tg_bot/state_machine_runners.py)
 
-### В короне пакета приложения tg_bot создайте файл `states.py`
+### В корне пакета приложения tg_bot создайте файл `states.py`
 Данный файл содержит в себе основную логику работы бота и состоит из отдельных состояний (states), описанных в виде классов, и связанных между собой.
 
 Для создания простейшего эхо-бота файл [states.py](https://github.com/Sergryap/django-bot-project/blob/main/django_project/tg_bot/states.py) может выглядеть так:
@@ -153,7 +153,7 @@ class EchoBotState(InteractiveState):
 
 `./manage.py migrate`
 
-### По завершению настроек структура дерево проекта должно выглядеть следующим образом:
+### По завершению настроек структура дерева проекта должно выглядеть следующим образом:
 
 ```
 django-bot-project/
